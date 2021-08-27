@@ -1,0 +1,217 @@
+body{
+    background: url(./Images/shara\ desert.jpg);
+    
+    background-size: cover;
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+}
+.top{
+    height: 260px;
+}
+ul {
+    list-style-type: none;
+    position: absolute;
+    right: 0;
+    color: white;
+    font-weight: bold;
+}
+
+
+li{
+    display: inline-block;
+    margin: 40px;
+}
+
+.menu{
+    height: 30px;
+    width: 30px;
+}
+
+.middle{
+   width: 100%;
+    color: white;
+}
+
+button{
+    width: 200px;
+    background-color: white;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.middleL{
+    margin-left: 80px;
+    width: 40%;
+    float: left;
+    
+}
+.heading{
+    font-size: 20px;
+}
+
+.flexbox{
+    width: 50%;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image1{
+    background: url(./Images/pic-1.png);
+    height:270px;
+    width: 270px;
+    z-index: 1;
+    background-size: 270px 270px;
+    border-radius: 10px;
+    transition: transform 500ms;
+}
+
+.image1:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+    background-color: black;
+}
+
+.image2{
+    background: url(./Images/pic-2.png);
+    background-size: 270px 270px;
+    height:270px;
+    width: 270px;
+    z-index: 1;
+    border-radius: 10px;
+    transition: transform 500ms;
+}
+
+.image2:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.image3{
+    background: url(./Images/pic-3.png);
+    height:270px;
+    width: 270px;
+    z-index: 1;
+    background-size: 270px 270px;
+    border-radius: 10px;
+    transition: transform 500ms;
+    margin-top: 20px;
+
+}
+
+.image3:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.image4{
+    background: url(./Images/pic-4.png);
+    background-size: 270px 270px;
+    height:270px;
+    width: 270px;
+    z-index: 1;
+   
+    border-radius: 10px;
+    transition: transform 500ms;
+    margin-top: 20px;
+
+}
+
+.image4:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+@media screen and (min-width:760px) and (max-width:1024px) {
+
+    .image1{
+        width: 400px;
+        background-size: 400px 400px;
+    }
+
+    .image2{
+        width: 400px;
+        background-size: 400px 400px;
+        margin-top: 20px;
+
+    }
+
+    .image3{
+        width: 400px;
+        background-size: 400px 400px;
+        margin-top: 20px;
+
+
+    }
+
+    .image4{
+        width: 400px;
+        background-size: 400px 400px;
+        margin-top: 20px;
+
+
+    }
+   
+
+    .middleL{
+        width: 100%;
+    }
+
+    .flexbox{
+        padding-top: 50px;
+        float: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+    }
+}
+
+
+@media screen and (min-width:300px) and (max-width:750px) {
+
+    ul li{
+        display: block;
+        margin: 10px;
+        }
+
+   .logo{
+       position: absolute;
+       top: 30px;
+       left: 30px;
+   }
+
+   .middleL{
+       width: 100%;
+       float: none;
+       margin: 0px;
+   }
+
+   .flexbox{
+       padding-top: 20px;
+       float: none;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       align-items: center;
+       margin: auto;
+   }
+
+
+}
